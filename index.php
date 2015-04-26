@@ -54,10 +54,13 @@
     
 ?>
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <title>Yanis Sahnoune - CV 2015</title>
 </head>
 <body>
 <div class="nav-center">     
