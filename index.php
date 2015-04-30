@@ -63,21 +63,13 @@
     <title>Yanis Sahnoune - CV 2015</title>
 </head>
 <body>
-<div class="nav-center">     
-    <ul class="nav">
-        <li class="li-nav"><a href="?page=home" title="home">Home</a></li>
-        <li class="li-nav"><a href="?page=message" title="message">Message</a></li>
-        <li class="li-nav"><a href="?page=inscription" title="inscription">inscription</a></li>
-        <?php
-        // if (isset($_SESSION['name'])) {
-        //     echo '<li class="li-nav"><a href="?page=logout" title="logout">logout</a></li>';
-        //     echo '<li class="li-nav"><a href="?page=profil" title="profil">Mon profil</a></li>';
-        // } else {
-        //     echo '<li class="li-nav"><a href="?page=login" title="login">login</a></li>';
-        // }
-        ?>
-    </ul>
-</div> 
+    <div class="nav-center">     
+        <ul>
+            <li class="li-nav"><a href="?page=home" title="home">Home</a></li>
+            <li class="li-nav"><a href="?page=message" title="message">Travaux</a></li>
+            <li class="li-nav"><a href="?page=inscription" title="inscription">Contact</a></li>
+        </ul>
+    </div> 
 
 <?php
 
@@ -100,7 +92,8 @@
     } else {
         echo 'File is missing';
     }
-die;
+    
+    die;
 ?>
 </body>
 </html>
