@@ -1,29 +1,111 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('font/Roboto');
+	src: url('font/Roboto-Light.ttf');
+}
+
 body{
 	width: 100%;
 	height: 100%;
-	background-color: #2c3e50;
+	background-color: #e9eced;
 }
 
-	ul{
-		width: 368px;
-		margin: auto;
+	#nav-left{
+		width: 220px;
+		height: 1000px;
+		background-color: #1a2530;
 	}
 
-		li{
-			width: 100px;
-			height: 200px;
-			display: inline;
-	    	list-style: none; /* pour enlever les puces sur IE7 */
-	    	margin: auto;
+		.navigation{
+			width: 220px;
+			height: auto;
+			background-color: #1a2530;
+			border-bottom-width: 2px;
+			border-style: solid;
+			border-color: rgba(255, 255, 255, 0.2);
+			margin-bottom: 10px;
+		}
+		
+			#ul-nav{
+				width: 220px;
+				height: auto;
+				font-family: Roboto;
+				font-size: 15pt;
+				padding-top: 25px;
+				padding-bottom: 25px;
+				line-height: 40px;
+			}
+
+				.nav-title{
+					width: 100%;
+					height: 40px;
+
+				}
+					.link-nav{
+						text-decoration: none;
+						color: #e9eced;
+					}
+
+					#link-accueil{
+						padding-left: 53px;
+						padding-right: 70px;
+						padding-bottom: 5px;
+						padding-top: 8px;
+					}
+
+					#link-work{
+						padding-left: 53px;
+						padding-right: 64px;
+						padding-bottom: 5px;
+						padding-top: 8px;
+					}
+
+					#link-contact{
+						padding-left: 53px;
+						padding-right: 66px;
+						padding-bottom: 5px;
+						padding-top: 8px;	
+					}
+
+					.link-nav:hover{
+						background-color: #2c3e50;
+					}
+
+						.icone-nav{
+							display: inline-block;
+							margin-right: 10px;
+						}
+
+		.socialNtework{
+			width: 100%;
+			height: 100%;
 		}
 
-		li a{
-			display: inline-block;
-	   		width: 100px;
-	    	padding: 5px 10px;
-	    	text-decoration: none;
-	    	color: #fff;
-	    	font-weight: bold;
-	    	background: #999;
-	    	text-align: center;
-		}
+			.socialNet{
+				width: 100%;
+				height: 195px;
+				margin-bottom: 10px;
+				background-color: #2c3e50;
+				font-family: Roboto;
+				font-weight: bold;
+				text-align: center;
+				cursor: pointer;
+				color: #e9eced;
+			}
+
+			.link-socialNetwork{
+				text-decoration: none;
+			}
+
+			#linkedIn:hover{
+				background-color: #1683bc;
+			}
+
+			#gitHub:hover{
+				background-color: #201f1f;
+			}
+
+				.txt-social-network{
+					padding-top: 75px;
+					font-size: 40px;
+				}
