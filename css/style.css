@@ -7,7 +7,7 @@
 html, body{
 	width: 100%;
 	height: 100%;
-	min-height: 100%;
+	max-height: 100%;
 	background-color: #e9eced;
 }
 
@@ -16,6 +16,7 @@ html, body{
 		height: 100%;
 		background-color: #1a2530;
 		float: left;
+		position: fixed;
 	}
 
 		.navigation{
@@ -81,6 +82,9 @@ html, body{
 		.socialNtework{
 			width: 100%;
 			height: auto;
+			border-bottom-width: 2px;
+			border-style: solid;
+			border-color: rgba(255, 255, 255, 0.2);
 		}
 
 			.socialNet{
@@ -112,17 +116,208 @@ html, body{
 					font-size: 40px;
 				}
 
+		.draWork{
+			width: 100%;
+			height: auto;
+			/*background-color: red;*/
+			text-align: center;
+			padding-top: 20px;
+		}
+
+			.creationNavLeft{
+				font-family: Roboto;
+				font-size: 15px;
+				font-weight: bold;
+				letter-spacing: 5px;
+				padding-bottom: 10px;
+				color: #e9eced;
+			}
+
+			.diapo{
+				width: 100%;
+				height: 195px;
+				background-color: pink;
+			}
+
 	.contener{
-		width: 1700px;
+		width: auto;
 		height: 100%;
-		background-color: #E3D8C9;
+		background-color: #e9eced;
 		margin-left: 220px;
 
 	}
 
-		.content{
-			width: 50%;
-			height: 100%;
-			background-color: #E74C3C;
+		.main{
+			width: 1100px;
+			height: 2000px;
+			/*background-color: red;*/
 			margin: auto;
+			position: relative;
 		}
+
+			.info-content{
+				width: 660px;
+				height: 260px;
+				top: 50px;
+				/*background-color: pink;*/
+				margin: auto;
+				position: relative;
+				padding: 5px;
+			}
+
+				.img-info{
+					position: relative;
+					width: 260px;
+					height: 100%;
+					background-image: url(img/img-profilcv.jpg);
+					float: left;
+					/*background-color: yellow;*/
+				}
+
+				.info-txt{
+					font-family: Roboto;
+					text-align: justify;
+					text-align: center;
+				}
+
+				#information{
+					font-size: 50px;
+					font-weight: bold;
+					float: left;
+					padding-top: 70px;
+					padding-left: 40px;
+				}
+
+				#phone{
+					font-size: 45px;
+					float: left;
+					padding-top: 5px;
+					padding-left: 40px;
+				}
+
+			.formation-block{
+				width: 100%;
+				top: 70px;
+				height: 300px;
+				/*background-color: orange;*/
+				position: relative;
+
+			}
+
+				.Fblock{
+					width: 50%;
+					height: 75px;
+					background-color: pink;
+					position: relative;
+				}
+
+				#right{
+					left: 550px;
+				}
+
+					.title-formation{
+						padding-top: 18px;
+						font-family: Roboto;
+						font-weight: bold;
+						padding-left: 40px;
+						padding-bottom: 5px;
+						font-size: 20px;
+					}
+
+					.content-txt-formation{
+						font-family: Roboto;
+						font-weight: lighter;
+						margin-left: 40px;
+					}
+
+			#dev{
+				position: relative;
+				width: 100%;
+				height: 300px;
+				background-color: #1a2530;
+				top: 90px;
+			}
+
+				.title-txtDG{
+					width: 60%;
+					height: 60px;
+					/*background-color: orange;*/
+				}
+
+					.title-txt{
+						display: inline-block;
+						font-family: Roboto;
+						font-size: 40px;
+						letter-spacing: 8px;
+						color: #e9eced;
+						padding-top: 10px;
+						padding-left: 20px;
+					}
+
+					#competences{
+						font-weight: bold;
+					}
+
+					#dev-title{
+						font-weight: lighter;
+					}
+
+			#graphisme{
+				position: relative;
+				width: 100%;
+				height: 300px;
+				background-color: #1a2530;
+				top: 110px;
+			}
+
+			.contactForm{
+				width: 100%;
+				height: 500px;
+				/*background-color: orange;*/
+				position: relative;
+				top: 130px;
+			}
+
+				.form-horizontal{
+					width: 70%;
+					height: 535px;
+					/*background-color: purple;*/
+					position: relative;
+					margin: auto;
+					text-align: center;
+				}
+
+				fieldset{
+					margin: auto;
+				}
+
+				legend{
+					text-align: center;
+					font-family: 'Roboto';
+					font-weight:bold;
+					font-size: 20px;
+					margin-bottom: 10px;
+					color: #1a2530;
+					padding-top: 10px;
+				}
+
+					.input-xlarge{
+						width: 550px;
+						height: 30px;
+						margin-bottom: 20px;
+						border-radius: 1px;
+						font-family: Roboto;
+					}
+
+					.buttonSub{
+						width: 250px;
+						height: 40px;
+					}
+
+				.error-inscription{
+					width: 550px;
+					height: 40px;
+					/*background-color: red;*/
+					margin-left: 110px;
+					margin-top: 20px;
+					}
