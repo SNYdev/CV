@@ -88,9 +88,11 @@
                     </div>
                 </div>
             </div>
-            <input type="color" id="changeColor">
+            <!-- Pour cours javascript -->
+            <!-- <input type="color" id="changeColor"> -->
         </nav>
         <div class="contener" id="right">
+            <div id="imgNav" alt=""></div>
             <div class="main">
                 <div class="info-content">
                     <div class="img-info">
@@ -176,7 +178,6 @@
     <script>
         $(function(){
 
-
                 function testEmail(email){
                         var regEmail = new RegExp('^[0-9a-z._-]+@{1}[0-9a-z.-]{2,}[.]{1}[a-z]{2,5}$','i');
                         return regEmail.test(email);
@@ -191,6 +192,15 @@
                         else if(testEmail(userEmail) === false){
                              $('#error-inscription').html('Adresse non valide');
                         }
+                });
+
+                $('#imgNav').click(function(){
+                    $('#nav-left').animate({
+                            width : '0px'
+                    }, 1000);
+                    $('.contener').animate({
+                            marginLeft : '0px'
+                    }, 1000);
                 });
 
                 $('#changeColor').change(function() {

@@ -19,6 +19,7 @@ html, body{
 		float: left;
 		position: fixed;
 		z-index: 1;
+		overflow: hidden;
 	}
 
 		.navigation{
@@ -145,12 +146,26 @@ html, body{
 			margin-left: 80px;
 		}
 
+
+
 	.contener{
 		height: 2000px;
 		margin-left: 220px;
 		background-repeat: repeat;
 		/*margin-left: 220px;*/
 		z-index: 2;
+	}
+
+	#imgNav{
+		float: left;
+		margin-top: 15px;
+		margin-left: 15px;
+		width: 40px;
+		height: 40px;
+		background-image: url(img/nav-show2.png);
+		background-position: left;
+		cursor: pointer;
+
 	}
 
 		.main{
@@ -324,67 +339,67 @@ html, body{
 				top: 130px;
 			}
 
-			#formTitle{
-				margin-bottom: 15px;
-			}
-
-				.form-horizontal{
-					width: 70%;
-					height: 535px;
-					/*background-color: purple;*/
-					position: relative;
-					margin: auto;
-					text-align: center;
+				#formTitle{
+					margin-bottom: 15px;
 				}
 
-				fieldset{
-					margin: auto;
-				}
-
-				input[type="text"], input[type="password"]{
-					background-color: #2c3e50;
-					border-width: 0px;
-					color: white;
-					padding-left: 10px;
-				}
-
-					.input-xlarge{
-						width: 550px;
-						height: 30px;
-						margin-bottom: 20px;
-						border-radius: 1px;
-						font-family: Roboto;
+					.form-horizontal{
+						width: 70%;
+						height: 535px;
+						/*background-color: purple;*/
+						position: relative;
+						margin: auto;
+						text-align: center;
 					}
 
-					.buttonSub{
-						width: 250px;
-						height: 40px;
-						-webkit-border-radius: 0;
-						-moz-border-radius: 0;
-						border-radius: 0px;
+					fieldset{
+						margin: auto;
+					}
+
+					input[type="text"], input[type="password"]{
+						background-color: #2c3e50;
 						border-width: 0px;
-						font-family: Arial;
-						color: #ffffff;
-						font-size: 20px;
-						background: #2c3e50;
-						padding: 10px 20px 10px 20px;
-						text-decoration: none;
+						color: white;
+						padding-left: 10px;
 					}
 
-					.buttonSub:hover{
-					background: #476582;
-  					text-decoration: none;
-  					cursor: pointer;
-					}
+						.input-xlarge{
+							width: 550px;
+							height: 30px;
+							margin-bottom: 20px;
+							border-radius: 1px;
+							font-family: Roboto;
+						}
 
-				#error-inscription{
-					width: 550px;
-					/*height: 40px;*/
-					/*background-color: red;*/
-					margin-left: 110px;
-					margin-top: 8px;
-					font-family: Roboto;
-					color: red;
-					font-weight: bold;
+						.buttonSub{
+							width: 250px;
+							height: 40px;
+							-webkit-border-radius: 0;
+							-moz-border-radius: 0;
+							border-radius: 0px;
+							border-width: 0px;
+							font-family: Arial;
+							color: #ffffff;
+							font-size: 20px;
+							background: #2c3e50;
+							padding: 10px 20px 10px 20px;
+							text-decoration: none;
+						}
 
-					}
+						.buttonSub:hover{
+						background: #476582;
+	  					text-decoration: none;
+	  					cursor: pointer;
+						}
+
+					#error-inscription{
+						width: 550px;
+						/*height: 40px;*/
+						/*background-color: red;*/
+						margin-left: 110px;
+						margin-top: 8px;
+						font-family: Roboto;
+						color: red;
+						font-weight: bold;
+
+						}
