@@ -184,6 +184,7 @@
                 }
 
                 var mail = $(this).find('input[name="mailUser"]');
+
                 mail.change(function () {
                         var userEmail = this.value;
                         if(userEmail == '' || testEmail(userEmail)){

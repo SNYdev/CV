@@ -165,6 +165,7 @@ html, body{
 		background-image: url(img/nav-show2.png);
 		background-position: left;
 		cursor: pointer;
+		position: fixed;
 
 	}
 
