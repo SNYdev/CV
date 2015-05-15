@@ -153,10 +153,10 @@
                     </div>
                 </div>
                 <div class="contactForm">
+                    <div class="title-txt" id="formTitle">INSCRIPTION</div>
                     <!-- à remplacer avec un formulaire de contact normal -->
                     <form class="form-horizontal" name="formInscription">
                         <fieldset>
-                        <legend>inscription</legend>
                             <input id="nameUser" name="nameUser" type="text" placeholder="Saisir votre nom" class="input-xlarge">
                             <input id="firstnameUser" name="firstnameUser" type="text" placeholder="Saisir votre prenom" class="input-xlarge">
                             <input id="mailUser" name="mailUser" type="text" placeholder="Saisir votre adresse mail" class="input-xlarge">
