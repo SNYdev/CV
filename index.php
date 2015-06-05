@@ -64,12 +64,12 @@
         <title>Yanis Sahnoune - CV 2015</title>
     </head>
     <body>
-        <nav id="nav-left">
+        <nav id="nav-left" hide="no">
             <div class="navigation" id="info-nav-left">
                 <ul id="ul-nav">
-                    <li class="nav-title" id="accueil"><a href="www.facebook.fr" class="link-nav" id="link-accueil"><img src="css/img/icone-accueil.png" class="icone-nav">Accueil</a></li>
-                    <li class="nav-title" id="travaux"><a href="" class="link-nav" id="link-work"><img src="css/img/icone-travaux.png" class="icone-nav">Travaux</a></li>
-                    <li class="nav-title" id="contact"><a href="#dev" class="link-nav" id="link-contact"><img src="css/img/icone-contact.png" class="icone-nav">Contact</a></li>
+                    <li class="nav-title" id="accueil"><a href="#info-nav-left" class="link-nav" id="link-accueil"><img src="css/img/icone-accueil.png" class="icone-nav">Accueil</a></li>
+                    <li class="nav-title" id="travaux"><a href="#dev" class="link-nav" id="link-work"><img src="css/img/icone-travaux.png" class="icone-nav">Travaux</a></li>
+                    <li class="nav-title" id="contact"><a href="#mailCV" class="link-nav" id="link-contact"><img src="css/img/icone-contact.png" class="icone-nav">Contact</a></li>
                 </ul>
             </div>
             <div class="socialNtework" id="social-nav-left">
@@ -154,7 +154,7 @@
                         <h3 class="title-txt" id="dev-title">GRAPH'</h3>
                     </div>
                 </div>
-                <div class="contactForm">
+                <div class="contactForm" id="mailCV">
                     <div class="title-txt" id="formTitle">INSCRIPTION</div>
                     <!-- à remplacer avec un formulaire de contact normal -->
                     <form class="form-horizontal" name="formInscription">
@@ -182,28 +182,32 @@
                         var regEmail = new RegExp('^[0-9a-z._-]+@{1}[0-9a-z.-]{2,}[.]{1}[a-z]{2,5}$','i');
                         return regEmail.test(email);
                 }
-
+                $(".competences").fadeIn("slow");
                 var mail = $(this).find('input[name="mailUser"]');
-
                 mail.change(function () {
-                        var userEmail = this.value;
-                        if(userEmail == '' || testEmail(userEmail)){
-                            $('#error-inscription').html('');
-                        }
-                        else if(testEmail(userEmail) === false){
-                             $('#error-inscription').html('Adresse non valide');
-                        }
+                    var userEmail = this.value;
+                    if(userEmail == '' || testEmail(userEmail)){
+                        $('#error-inscription').html('');
+                    }
+                    else if(testEmail(userEmail) === false){
+                         $('#error-inscription').html('Adresse non valide');
+                    }
                 });
-
                 $('#imgNav').click(function(){
-                    $('#nav-left').animate({
-                            width : '0px'
-                    }, 1000);
-                    $('.contener').animate({
-                            marginLeft : '0px'
-                    }, 1000);
+                    var selectW = $('#nav-left');
+                    var selecC = $('.contener');
+                    var testHide = $("body").find("#nav-left").attr('hide');
+                    if (testHide == "no") {
+                        $( "#nav-left" ).attr({hide: "yes"});
+                        $(selectW).animate({width : '0px'}, 1000);
+                        $(selecC).animate({marginLeft : '0px'}, 1000);
+                    };
+                    if (testHide == "yes") {
+                        $( "#nav-left" ).attr({hide: "no"});
+                        $(selectW).animate({width : '220px'}, 1000);
+                        $(selecC).animate({marginLeft : '220px'}, 1000);
+                    };
                 });
-
                 $('#changeColor').change(function() {
                         $('#nav-left').animate({
                             backgroundColor: $(this).val()
@@ -213,7 +217,6 @@
                             backgroundColor: $(this).val()
                         }, 2000);
                 });
-
                 $('form[name="formInscription"]').submit(function(){
 
                         $('.error-inscription').html('');
@@ -264,6 +267,13 @@
                         
                         return false;
                 });
+
+                $('.link-nav').click(function(){
+                    var pageScroll = $(this).attr('href');
+                    var speedScroll =  750;
+                    var test = $('body').animate({scrollTop: $(pageScroll).offset().top}, speedScroll);
+                    console.log(test);
+                })
         });
     </script>
     <script type="text/javascript">
